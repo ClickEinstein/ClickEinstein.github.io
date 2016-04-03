@@ -1,0 +1,25 @@
+{
+  "name": "clickeinstein-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page for ClickEinstein v2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ClickEinstein",
+    "Clicker",
+    "Audience",
+    "Response",
+    "System",
+    "Mobile",
+    "Classroom",
+    "Classroom",
+    "Analytics"
+  ],
+  "author": "ClickEinstein",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  }
+}
