@@ -43,7 +43,7 @@ h3{
 }
 
 .blue-background {
-    background-color: #f0f4f7;
+    background-color: #f0f4f7 !important;
 }
 
 .long-description {
@@ -59,7 +59,7 @@ h3{
 
 .btn-blue{
     margin: 0;
-    position: absolute;
+    margin-top: 15px;
     right: 15px;
     top: 0;
     border-color: #337ddd;
@@ -72,4 +72,67 @@ h3{
     padding: 14px;
     text-transform: uppercase;
     vertical-align: top;
+}
+.padding-bottom-45 {
+    padding-bottom: 45px;
+}
+.margin-bottom-45{
+    margin-bottom: 45px;
+}
+.click-icon {
+    border: 2px solid #F0F4F7;
+    border-radius: 50%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    width: 80px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    color: #212f44;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+}
+
+.click-icon:hover{
+    background-color: #337ddd;
+}
+
+.click-icon:hover i {
+    color: #ffffff;
+}
+.click-icon i {
+    font-size: 38px;
+    color: #337ddd;
+    padding-top: 18px;
+    padding-left: 3px;
+}
+
+.details span{
+    display: block;
+    margin: 26px 0 15px;
+    color: #212f44;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-family: Open Sans;
+}
+
+.details p {
+    line-height: 24px;
+    margin: 0 0 24px;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    color: #69778c;
+}
+
+.padding-sides-30 {
+    padding-left: 30px;
+    padding-right: 30px;
 }
