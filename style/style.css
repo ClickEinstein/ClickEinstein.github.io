@@ -3,7 +3,10 @@ body{
     font-size: 14px;
     font-weight: 400;
 }
-
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
 .title {
     font-family: "Raleway", sans-serif;
     font-size: 33px;
@@ -32,6 +35,11 @@ h3{
     margin: 12px 0;
     line-height: 26px;
     text-transform: uppercase;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
 }
 .description {
     color: #212f44;
@@ -135,4 +143,151 @@ h3{
 .padding-sides-30 {
     padding-left: 30px;
     padding-right: 30px;
+}
+
+p {
+    line-height: 24px;
+    margin: 0 0 24px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+footer{
+
+}
+
+footer .row:first-of-type {
+    margin-bottom: 40px;
+}
+
+.clickEinstein-footer{
+    background-color: #222222;
+    background-repeat: repeat;
+    background-position: top center;
+    background-image: none !important;
+    background-size: cover;
+    padding: 105px 0 35px;
+}
+
+.clickEinstein-address h3 span, .clickEinstein-happy-hours h3 span {
+    color: #fff;
+    display: block;
+    font-family: "Raleway",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 0 0 18px;
+    text-transform: uppercase;
+}
+
+.clickEinstein-address p {
+    color: #fff;
+    margin: 0 0 17px;
+}
+
+.clickEinstein-address a {
+    color: #fff;
+}
+
+.clickEinstein-address p:last-of-type a {
+    color: #a5b3c2;
+}
+
+.widget-title span {
+    color: #FFFFFF;
+}
+
+.widget > ul, .widget_nav_menu ul.menu {
+    padding: 0;
+}
+.widget ul {
+    list-style: none;
+}
+
+.widget.widget_social li {
+    display: inline-block;
+}
+
+.widget.widget_social li a {
+    border-radius: 2px;
+    display: block;
+    height: 36px;
+    padding: 8px 0;
+    text-align: center;
+    width: 36px;
+    margin: 0 10px 10px 0;
+}
+
+.widget.widget_social li a i {
+    color: #fff;
+    font-size: 14px;
+}
+
+.clickEinstein-icon-twitter {
+    background: #55acef;
+}
+
+.clickEinstein-icon-facebook {
+    background: #3b5999;
+}
+
+.clickEinstein-icon-google-plus {
+    background: #dd4a38;
+}
+
+.clickEinstein-icon-instagram {
+    display: none !important;
+    background: #3e729a;
+}
+
+.clickEinstein-icon-youtube {
+    background: #cc2127;
+    display: none !important;
+}
+.clickEinstein-address .widget-title, .clickEinstein-happy-hours .widget-title {
+    margin: 0;
+}
+
+
+
+.col-xs-6.clickEinstein-footer-menu {
+    padding-top: 41px;
+    text-align: center;
+}
+
+.col-xs-3.clickEinstein-footer-socials {
+    padding-top: 35px;
+}
+
+.clickEinstein-uptop i {
+    font-size: 75px;
+}
+
+.clickEinstein-uptop {
+    display: inline-block;
+    margin: 42px 0 0;
+    position: relative;
+}
+
+.clickEinstein-uptop::after {
+    background: #596873;
+    content: "";
+    height: 40px;
+    left: 48.5%;
+    position: absolute;
+    top: 65px;
+    width: 1px;
+}
+.pe-7s-angle-up:before {
+    content: "\e682";
+}
+
+footer .col-xs-12 {
+    text-align: center;
+}
+
+.fbstart {
+    padding-top: 15px;
 }
