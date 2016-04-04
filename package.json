@@ -1,5 +1,5 @@
 {
-  "name": "clickeinstein-landing-page",
+  "name": "clickeinstein",
   "version": "1.0.0",
   "description": "Landing page for ClickEinstein v2",
   "main": "app.js",
@@ -20,6 +20,17 @@
   "author": "ClickEinstein",
   "license": "ISC",
   "dependencies": {
-    "bootstrap-sass": "^3.3.6"
-  }
+    "bootstrap": "^3.3.6",
+    "bootstrap-sass": "^3.3.6",
+    "font-awesome": "^4.5.0",
+    "pixeden-stroke-7-icon": "^1.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vatsalpande/landing-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vatsalpande/landing-page/issues"
+  },
+  "homepage": "https://github.com/vatsalpande/landing-page#readme"
 }
