@@ -158,7 +158,7 @@ footer{
 
 }
 
-footer .row:first-of-type {
+footer .row:ficlickEinstein-of-type {
     margin-bottom: 40px;
 }
 
@@ -223,6 +223,14 @@ footer .row:first-of-type {
 .widget.widget_social li a i {
     color: #fff;
     font-size: 14px;
+}
+
+.clickEinstein-index-banner-content .btn:hover,
+.clickEinstein-page-shortdescription.clickEinstein-dark
+.btn:hover, .btn, .btn:hover, .btn2,
+.widget.widget_tag_cloud
+.tagcloud a:hover {
+    border-color: #337ddd;
 }
 
 .clickEinstein-icon-twitter {
@@ -290,4 +298,106 @@ footer .col-xs-12 {
 
 .fbstart {
     padding-top: 15px;
+}
+
+.group-title{
+    text-align: center;
+}
+
+
+.group-title span {
+    color: #212f44;
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-size: 33px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin: 103px 0 32px;
+    padding: 0 0 37px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.group-title span:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 3px;
+    background: #617284;
+}
+
+.group-title > p {
+    color: #69778c;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 0 auto 60px;
+    max-width: 645px;
+}
+
+.clickeinstein-page-input, #clickeinstein-coming-page input[type="text"] {
+    border: 0;
+    margin: 0 0 30px;
+    padding: 12px 0;
+    width: 100%;
+    border-bottom: 2px solid #f0f4f7;
+    color: #223040;
+    background: transparent;
+}
+
+input, textarea, select, button {
+    border-radius: 0;
+    outline: none;
+}
+
+.clickeinstein-contactsubmit {
+    margin: 0 0 140px;
+    text-align: center;
+}
+
+.btn.btn-sm, .btn-group-sm > .btn {
+    font-size: 12px;
+    line-height: 1.5;
+    min-width: 140px;
+    padding: 10px;
+}
+
+.clickeinstein-header-menu nav li li:hover,
+.clickeinstein-page li.active a, .clickeinstein-page li a:hover,
+.clickeinstein-homewelcome-tabs .clickeinstein-video a,
+.clickeinstein-home2 .clickeinstein-whoweare li i:hover, .clickeinstein-index-banner-content .btn:hover,
+.clickeinstein-page-shortdescription.clickeinstein-dark
+.btn:hover, .col-xs-3.clickeinstein-footer-socials a:hover,
+.clickeinstein-box-info-2:hover i, .clickeinstein-boxinfo-style-1:hover span.clickeinstein-icon,
+.btn, .btn:hover, .btn2, #submit, .clickeinstein-page span,
+.progress-bar-success, .clickeinstein-video a, .clickeinstein-style i:hover, .widget.widget_calendar table th,
+.widget.widget_calendar table tbody td#today, .widget.widget_tag_cloud .tagcloud a:hover,
+#clickeinstein-coming-page input[type="submit"] {
+    background-color: #337ddd;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    -ms-transition: background 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn, #submit {
+    color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.btn, #submit, #rst-coming-page input[type="submit"] {
+    border-radius: 30px;
+    display: inline-block;
+    letter-spacing: 1px;
+    min-width: 150px;
+    padding: 14px;
+    text-transform: uppercase;
+    vertical-align: top;
 }
