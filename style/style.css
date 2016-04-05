@@ -81,6 +81,11 @@ a, a:hover, a:focus {
     text-transform: uppercase;
     vertical-align: top;
 }
+
+.btn-blue:hover{
+    color: #fff;
+}
+
 .padding-bottom-45 {
     padding-bottom: 45px;
 }
@@ -103,18 +108,20 @@ a, a:hover, a:focus {
     letter-spacing: 2.5px;
 }
 
-.click-icon:hover{
-    background-color: #337ddd;
-}
 
-.click-icon:hover i {
-    color: #ffffff;
-}
 .click-icon i {
     font-size: 38px;
     color: #337ddd;
     padding-top: 18px;
     padding-left: 3px;
+}
+
+.key-point:hover div .click-icon{
+    background-color: #337ddd;
+}
+
+.key-point:hover div .click-icon i {
+    color: #ffffff;
 }
 
 .details span{
