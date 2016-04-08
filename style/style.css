@@ -84,6 +84,7 @@ a, a:hover, a:focus {
 
 .btn-blue:hover{
     color: #fff;
+    background-color: #0d46dd !important;
 }
 
 .padding-bottom-45 {
