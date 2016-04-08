@@ -7,6 +7,16 @@ body{
     padding-left: 30px;
     padding-right: 30px;
 }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+    display: block;
+}
+
+.clickEinstein_row, .clickEinstein_content_element, ul.clickEinstein_thumbnails-fluid > li, .last_toggle_el_margin, .clickEinstein_button {
+    margin-bottom: 0!important;
+}
+
+
 .title {
     font-family: "Raleway", sans-serif;
     font-size: 33px;
@@ -392,7 +402,7 @@ input, textarea, select, button {
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-.btn, #submit, #rst-coming-page input[type="submit"] {
+.btn, #submit, #clickeinstein-coming-page input[type="submit"] {
     border-radius: 30px;
     display: inline-block;
     letter-spacing: 1px;
@@ -400,4 +410,74 @@ input, textarea, select, button {
     padding: 14px;
     text-transform: uppercase;
     vertical-align: top;
+}
+
+.header-icon{
+    float: left;
+    margin: 25px 0 0;
+}
+
+.introText{
+    z-index: 6;
+    max-width: 436px;
+    max-height: 54px;
+    white-space: nowrap;
+    transition: all 0s ease 0s;
+    min-height: 0px;
+    min-width: 0px;
+    line-height: 27px;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 0px;
+    font-size: 18px;
+    left: 30px;
+    top: 158px;
+    visibility: visible;
+
+    /*transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);*/
+}
+
+
+.clickEinstein-caption{
+    z-index: 5;
+    white-space: normal;
+    transition: all 0s ease 0s;
+    min-height: 0px;
+    min-width: 0px;
+    line-height: 55px;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 0px;
+    font-size: 45px;
+    left: 30.5px;
+    top: 42px;
+    visibility: visible;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    font-family: Raleway;
+    color: rgb(79,79,79);
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-width: 0px;
+    border-color: rgb(0,0,0);
+    border-style: none;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+.banner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 10%;
+}
+
+.z-index-20{
+    z-index : 20;
+}
+
+.margin-bottom-10{
+    margin-bottom: 30%;
 }
