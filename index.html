@@ -22,6 +22,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type = "text/javascript" src = "js/validator.min.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -262,23 +263,34 @@
 
                     <div class = "sign_in_form">
                         <div class="screen-reader-response"></div>
-                        <form action="" method="post">
+                        <form action="" method="post" data-toggle="validator" onsubmit="javascript:return addSubscriber();">
                             <div id="clickeinstein-sign_in" class="container">
+
+                                <div class="col-lg-6 col-lg-push-3 alert alert-success signup_status hide" id = "signup_success">
+                                    <strong>Congratulations!</strong> You are successfully signed up.
+                                </div>
+
+                                <div class="col-lg-6  col-lg-push-3 alert alert-warning signup_status hide" id = "signup_failure">
+                                    <strong>Oops this was bad!!!</strong> Please try after some time
+                                </div>
+
                                 <div class="col-lg-8 col-lg-offset-2">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 form-group">
                                     <span class="your-name">
-                                        <input type="text" name="your-name" class = "clickeinstein-page-input" value="" size="40"  id="name" aria-required="true" aria-invalid="false" placeholder="Name">
+                                        <input type="text" required name="your-name" id="signup_name" class="clickeinstein-page-input" value="" size="40"  id="name" aria-required="true" aria-invalid="false" placeholder="Name" data-error="Please enter name">
                                     </span>
+                                        <span class="help-block with-errors"></span>
                                     </div>
 
-                                    <div class="col-lg-6">
-                                    <span class="email">
-                                        <input type="email" class = "clickeinstein-page-input" name="email" value="" size="40"  id="email" aria-required="true" aria-invalid="false" placeholder="Your Email">
+                                    <div class="col-lg-6 form-group">
+                                    <span class="email" >
+                                        <input type="email" required class = "clickeinstein-page-input" id="signup_email" name="email" value="" size="40"  id="email" aria-required="true" aria-invalid="false" placeholder="Your Email"  data-error="Email address is invalid">
                                     </span>
+                                        <span class="help-block with-errors"></span>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-12 col-lg-offset-4 clickeinstein-contactsubmit">
+                                <div class="col-lg-12 col-lg-offset-4 clickeinstein-contactsubmit form-group">
                                     <input type="submit" value="Sign up" class="btn btn-sm">
                                 </div>
                             </div>
@@ -385,5 +397,28 @@
         </div>
     </div>
 </footer>
+
+<script type="text/javascript">
+
+
+    function addSubscriber(){
+
+        var dataObj = {
+            name : $("#signup_name").val(),
+            email : $("#signup_email").val()
+        }
+        $(".signup_status").addClass("hide");
+        $.post( "https://api.clickeinstein.com/subscriber",dataObj, function() {
+
+                $("#signup_success").removeClass("hide");
+                })
+                .fail(function() {
+                    $("#signup_failure").removeClass("hide");
+                });
+        return false;
+    }
+
+
+</script>
 </body>
 </html>
