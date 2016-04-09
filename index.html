@@ -64,7 +64,6 @@
             </div>
         </div>
     </div>
-    </div>
 
 </header>
 
@@ -309,19 +308,19 @@
 <footer class="clickEinstein-footer">
     <div class="container">
         <div class="row">
-            <div class="col-xs-3">
+            <div class="col-sm-3 margin-bottom-45">
                 <div class="clickEinstein-address">
                     <aside id="clickEinstein-contactinfo" class="widget contactinfo">
                         <h3 class="widget-title">
                             <span>India</span>
                         </h3>
                         <p>2nd Floor, E-3/3, Sector-16, Rohini, Delhi</p>
-                        <p><a href="whatsapp:+91 9953448330">+91-995 344 8330</a></p>
+                        <p><a href="tel:+919953448330">+91-995 344 8330</a></p>
                         <p><a href="mailto:info@clickeinstein.com">info@clickeinstein.com</a></p>
                     </aside>
                 </div>
             </div>
-            <div class="col-xs-3">
+            <div class="col-sm-3 margin-bottom-45">
                 <aside id="text-2" class="widget widget_text">
                     <h3 class="widget-title"><span>Proudly Backed by</span></h3>
                     <div class="textwidget">
@@ -336,7 +335,7 @@
                     </div>
                 </aside>
             </div>
-            <div class="col-xs-3">
+            <div class="col-sm-3 margin-bottom-45">
                 <aside id="clickEinstein-social-widget-2" class="widget widget_social">
                     <h3 class="widget-title">
                         <span>We're social</span>
@@ -374,7 +373,7 @@
                     </ul>
                 </aside>
             </div>
-            <div class="col-xs-3">
+            <div class="col-sm-3 margin-bottom-45">
                 <div class="clickEinstein-happy-hours">
                     <aside id="text-3" class="widget widget_text">
                         <h3 class="widget-title"><span>MAKE IN INDIA</span></h3>
@@ -410,8 +409,8 @@
         $(".signup_status").addClass("hide");
         $.post( "https://api.clickeinstein.com/subscriber",dataObj, function() {
 
-                $("#signup_success").removeClass("hide");
-                })
+            $("#signup_success").removeClass("hide");
+        })
                 .fail(function() {
                     $("#signup_failure").removeClass("hide");
                 });
