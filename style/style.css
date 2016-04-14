@@ -97,6 +97,10 @@ a, a:hover, a:focus {
     background-color: #0d46dd !important;
 }
 
+.btn-blue:focus {
+    color: #fff;
+}
+
 .padding-bottom-45 {
     padding-bottom: 45px;
 }

@@ -31,7 +31,7 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar navbar-default navbar-fixed-top">
             <img class="navbar-brand" src="images/clickeinstein2-e1449312740343.png">
-            <button class="btn pull-right btn-sm btn-blue wow pulse infinite" id="topCTA">Sign up</button>
+            <button class="btn pull-right btn-sm btn-blue wow pulse infinite" onclick="return scrollToSignup(event)" id="topCTA">Sign up</button>
         </div>
 
     </div><!-- /.container-fluid -->
@@ -55,7 +55,7 @@
                     <div class="row margin-bottom-45 wow fadeInDown">
                         <div class="col-xs-12 text-left" style="margin-left: -15px;">
                             <button class="btn btn-blue" style="margin-right: 15px">Read More...</button>
-                            <button class="btn btn-blue">Sign up</button>
+                            <button class="btn btn-blue" onclick="return scrollToSignup(event)">Sign up</button>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                     <p class="long-description">Sign up for preview to get exclusive access to ClickEinstein Plus</p>
                 </div>
                 <div class="col-md-4 text-right wow fadeInRight">
-                    <button class="btn btn-blue">Sign up</button>
+                    <button class="btn btn-blue" onclick="return scrollToSignup(event)">Sign up</button>
                 </div>
             </div>
         </div>
@@ -102,7 +102,7 @@
             <p class="long-description wow fadeIn">Sign up for preview to get exclusive access to ClickEinstein Plus</p>
         </div>
         <div class="col-xs-12 text-center blue-background">
-            <button class="btn btn-blue margin-bottom-45 wow fadeInRight">Sign up</button>
+            <button class="btn btn-blue margin-bottom-45 wow fadeInRight" onclick="return scrollToSignup(event)">Sign up</button>
         </div>
     </div>
 
@@ -170,7 +170,7 @@
                 </div>
 
                 <div class="row text-center padding-bottom-45" style="margin-top:30px">
-                    <button class="btn btn-blue wow fadeInRight">Sign up for early access</button>
+                    <button class="btn btn-blue wow fadeInRight" onclick="return scrollToSignup(event)">Sign up for early access</button>
                 </div>
 
             </div>
@@ -241,7 +241,7 @@
                 </div>
 
                 <div class="row text-center margin-bottom-45" style="margin-top:30px">
-                    <button class="btn btn-blue wow fadeInLeft">Sign up for early access</button>
+                    <button class="btn btn-blue wow fadeInLeft" onclick="return scrollToSignup(event)">Sign up for early access</button>
                 </div>
             </div>
         </div>
@@ -293,7 +293,7 @@
                                 </div>
 
                                 <div class="col-lg-12 col-lg-offset-4 clickeinstein-contactsubmit form-group">
-                                    <input type="submit" value="Sign up" class="btn btn-sm">
+                                    <input type="submit" value="Sign up" class="btn btn-blue btn-sm">
                                 </div>
                             </div>
                         </form>
@@ -418,6 +418,16 @@
                     $("#signup_failure").removeClass("hide");
                 });
         return false;
+    }
+
+    function scrollToSignup(e){
+        e.preventDefault();
+        // animate
+        $('html, body').animate({
+            scrollTop: $('#signup').offset().top
+        }, 500, function(){
+            window.location.hash = 'signup';
+        });
     }
 
     // Initialize the animations
